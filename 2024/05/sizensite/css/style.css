@@ -1,0 +1,315 @@
+@charset "UTF-8";
+
+html {
+    font-size: 100%;
+  }
+  body {
+    font-family: "Zen Maru Gothic", serif;
+    font-size: 0.875rem;
+    color: #2a2a2a;
+    background-color: #FFFEE6;
+  }
+
+    li {
+      list-style: none;
+    }
+
+/* ヘッダー */
+    #header {
+      background-image: url(../image/spsmart2.jpg);
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+      height: 100vh;
+     
+    }
+        /* 生産者さんの顔が見えるレストラン */
+    #header .top-title {
+      color:#7b956f ;
+      text-align: center;
+      font-style: normal;
+      font-weight: 700;
+      font-size: 36px;
+      display: inline-block;
+      margin-top: 40vh;
+      margin-left: 60vh;
+      background-color: rgba(255, 255, 255, 0.862);
+      text-shadow:
+      1px 1px 0 #fcfbfb,
+      -1px 1px 0 #fcfbfb,
+      -1px -1px 0 #fcfbfb,
+      1px -1px 0 #fcfbfb;
+        padding: 30px 20px;
+      padding: 30px 20px;
+      border-radius: 15px;
+    }
+
+    .site-title {
+      position: absolute;
+      margin-top: 30px;
+      margin-left: 30px;
+    }
+
+.main-nav {
+  background-color:#f9d195;
+  border-radius: 15px;
+  display: block;
+  flex-direction:column;
+  text-decoration: none;
+  position: absolute;
+  top: 30px;
+  right: 30px;
+  width: 150px;
+  height: 330px;
+   /*stickyで固定*/
+   position: -webkit-sticky;/*Safari*/
+   position:fixed;
+}
+
+.sub-nav {
+  font-size: 24px;
+  text-align: center;
+  display: block; 
+  padding: 0px 20px;
+  color: #fff;
+  width: 150px; 
+  
+  }
+
+  .sub-nav li {
+    line-height:2;
+    margin-right: 35px;
+
+  }
+.sub-nav a {
+  text-decoration: none;
+}
+  .sub-nav li a:hover{
+  border: 1px solid #fff;
+  }
+  
+.icons{
+  width: 50px;
+}
+
+/* メイン */
+
+  /* SIZENについて */
+  .sub-title h2{
+
+  font-style:normal;
+  font-weight:bold;
+  font-size: 32px;
+  line-height: 37px;
+  color: #D9AE7D;
+  text-align: center;
+
+}
+.sizen--wrap {
+  width: 800px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  padding-top: 30px;
+}
+.text {
+  font-weight: bold;
+  padding-left: 50px;
+  text-align:left;
+  margin-bottom: 10px;
+  line-height: 1.8;
+
+}
+.circle-text ul {
+  margin-top: 20px;
+  list-style-type: none;
+  display: flex;
+  justify-content: space-between;
+}
+.circle-text li {
+  margin-right: 50px;
+}
+
+.sizen img {
+width: 400px;
+height: 300px;
+}
+.about--bg p {
+  text-align: center;
+}
+.circle-text {
+  width: 800px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  text-align: center;
+}
+.about-text {
+  display: block;
+  margin: 0 auto;
+  font-weight: bold;
+
+}
+.about--bg {
+  width: 900px;
+  height: 700px;
+  margin: 0 auto;
+  background-color: #C4D7AD;
+  border-radius: 15px;
+}
+
+/*==================================================
+ふわっ
+===================================*/
+
+
+/* fadeUp */
+
+.fadeUp{
+  animation-name:fadeUpAnime;
+  animation-duration:2s;
+  animation-fill-mode:forwards;
+  opacity:0;
+  }
+  
+  @keyframes fadeUpAnime{
+    from {
+      opacity: 0;
+    transform: translateY(100px);
+    }
+  
+    to {
+      opacity: 1;
+    transform: translateY(0);
+    }
+  }
+  
+  
+  /* スクロールをしたら出現する要素にはじめに透過0を指定　*/
+   
+  .fadeUpTrigger{
+      opacity: 0;
+  }
+
+/* メニュー */
+
+#menu h2 {
+  margin-top: 50px;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 32px;
+  line-height: 37px;
+  color: #D9AE7D;
+  text-align: center;
+  font-weight: bold;
+ }
+
+.menu--bg {
+  
+  background-color: #fff;
+  width: 880px;
+  height: 250px;
+  display: block;
+  margin: 30px auto ;
+  text-align: center;
+}
+  .menu--bg ul li figure img{
+    width: 200px;
+  
+}
+.menu-photo{
+  margin-top: 30px;
+}
+.menu-text{
+ padding-top: 50px;
+}
+.farmer {
+  padding-bottom: 10px;
+}
+
+.menu--bg ul li p {
+    display: inline-block;
+    text-align: center;
+    margin-top: 80px;
+    letter-spacing: 0.1em;
+   
+}
+
+.first ul {
+  list-style-type: none;
+  display: flex;
+
+  }
+ .second ul {
+  list-style-type: none;
+  display: flex;
+ 
+ }
+
+
+ 
+.third ul {
+  list-style-type: none;
+  display: flex;
+  
+}
+figcaption{
+  background: linear-gradient(transparent 50%, yellow 50%);
+}
+/* アクセス */
+#access h2 {
+  margin-top: 50px;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 32px;
+  line-height: 37px;
+  color: #D9AE7D;
+  text-align: center;
+  font-weight: bold;
+}
+
+.access-wrapper {
+  background-color: #C4D7AD;
+  margin-bottom: 30px;
+  width: 800px;
+  height: 350px;
+  border-radius: 15px;
+  list-style-type: none;
+  display: flex;
+  margin: 0 auto;
+  margin-bottom: 30px;
+  
+}
+.access {
+  margin: 30px 90px 10px 40px;
+}
+.access img {
+  width: 200px;
+  height: 80px;
+}
+.li-text {
+  font-size: 130%;
+  line-height: 1.5;
+}
+.map {
+  position: absolute;
+  margin-left: 450px;
+  margin-top: 30px;
+  width: 250px;
+  height: 250px;
+  border-radius: 15px;
+}
+/* フッター */
+
+#footer {
+  background-color: #C4D7AD;
+  position: relative;
+}
+.wrapper{
+  display:flex;
+  justify-content: space-around;
+}
+.logo {
+  display: inline-block;
+  margin-top:30px;
+}
