@@ -1,0 +1,31 @@
+@charset "utf-8";
+
+.layout{
+    margin: auto;
+    width: 960px;
+}
+.box-flex{
+    border-bottom: 1px solid #000;
+    display: flex;
+    padding: 1em 0;
+    gap: 2%;
+}
+
+.box-flex li:first-child {
+    flex-basis: 20%;
+}
+
+.box-flex li:nth-child(2){
+    flex-basis: 50%;
+}
+
+.box-flex li:last-child{
+    flex-basis: 50%;
+}
+
+footer {
+    margin: 60px 0 0 0 ;
+    padding: 1em 0;
+    text-align: center;
+    background: rgb(191, 236, 236);
+}
